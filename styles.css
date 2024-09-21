@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3, p {
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+header, footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Space between header items */
+    align-items: center; /* Vertically center the items */
+}
+
+.navbar ul {
+    display: flex; /* Use flexbox for horizontal alignment */
+    padding: 0; 
+    margin: 0;
+}
+
+.navbar li {
+    list-style-type: none; /* Remove default list styling */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* Link color */
+    padding-right: 30px;
+}
+
+.navbar a:hover {
+    background-color: #6d6d6d; /* This should give you the hover effect */
+    color: white; /* Ensure text stays white on hover */
+}
+
+
+main {
+    width: 70%; /* Set main width to 70% */
+    padding: 20px;
+}
+
+aside {
+    width: 25%; /* Set aside width to 25% */
+    padding: 20px;
+    background: #8d8b8b; /* Light background for contrast */
+    border-radius: 5px;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Set form width to 50% */
+    min-width: 300px; /* Minimum width to ensure usability */
+    text-align: left; /* Aligns form text to the left */
+    margin: 20px 0; /* Space above and below the form */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 20px); /* Adjust width to create space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex; /* Use flexbox to arrange buttons inline */
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    background: #0a612b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto; /* Set width to auto to fit content */
+}
+
+button:hover {
+    background: #4cae4c;
+}
+
+#clear-button {
+    background-color: #838080; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px;
+    cursor: pointer; 
+    border-radius: 5px; 
+    width: auto; /* Set width to auto to fit content */
+}
+
+#clear-button:hover {
+    background-color: #352d2d;
+}
+
+#results {
+    display: none; /* Initially hidden */
+    background: #fff;
+    padding: 20px; /* Match the form's padding */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Same width as form */
+    min-width: 300px; /* Same minimum width as form */
+    text-align: left; /* Align text to the left */
+    margin: 20px 0 0; /* Space above results */
+}
+
+#results-v6 {
+    display: none; /* Initially hidden */
+    background: #fff;
+    padding: 20px; /* Match the form's padding */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 50%; /* Same width as form */
+    min-width: 300px; /* Same minimum width as form */
+    text-align: left; /* Align text to the left */
+    margin: 20px 0 0; /* Space above results */
+}
+
+#clear-button-v6 {
+    background-color: #838080; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px;
+    cursor: pointer; 
+    border-radius: 5px; 
+    width: auto; /* Set width to auto to fit content */
+}
+
+#clear-button-v6:hover {
+    background-color: #352d2d;
+}
+
+footer {
+    height: 100px;
+
+}
